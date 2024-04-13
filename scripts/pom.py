@@ -35,16 +35,29 @@ elif data["status"] == "1":
     data["time"] = str(int(data["time"]) - 1)
 
 
+# showing time in minutes and seconds
+def add_zero(num):
+    if(num >= 0 and num <= 9):
+        return f"0{num}"
+    else:
+        return str(num)
+
+all = data["time"]
+m = int(data["time"]) // 60
+s = int(data["time"]) % 60
+
+
 # visualising data
 
 if data["round"] in ["0", "2", "4", "6"]:
-    data["text"] = f"W{int(int(data['round'])/2+1)} {data['time']}"
+    data["text"] = f"W{int(int(data['round'])/2+1)} {add_zero(m)}:{add_zero(s)}"
 else:
-    data["text"] = f"B{int(int(data['round'])/2+1)} {data['time']}"
+    data["text"] = f"B{int(int(data['round'])/2+1)} {add_zero(m)}:{add_zero(s)}"
 
 
+print(json.dumps(data))
+
+data["time"] = all
 
 with open(file_path, "w") as file:
     json.dump(data, file, indent=6)
-
-print(json.dumps(data))
