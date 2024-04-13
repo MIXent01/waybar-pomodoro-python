@@ -1,0 +1,28 @@
+
+ "custom/pomodoro" : {
+      "tooltip" : true,
+      "format" : "{}",
+      "interval" : 1,
+      "exec" : "python3 ~/.config/waybar/scripts/pom.py",
+      "return-type" : "json"
+    },
+
+    "custom/start" : {
+      "format" : "▶️",
+      "on-click" : "python3 ~/.config/waybar/scripts/start.py"
+    },
+
+    "custom/stop" : {
+      "format" : "⏹",
+      "on-click" : "python3 ~/.config/waybar/scripts/stop.py"
+    },
+
+    "custom/restart" : {
+      "format" : "🔁",
+      "on-click" : "python3 ~/.config/waybar/scripts/restart.py"
+    },
+
+    "custom/skip" : {
+      "format" : "⏩",
+      "on-click" : "python3 ~/.config/waybar/scripts/skip.py"
+    },

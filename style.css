@@ -1,0 +1,28 @@
+#custom-skip,
+#custom-start,
+#custom-stop,
+#custom-restart,
+#custom-pomodoro {
+    background: #1e1e2e;
+    opacity: 0.8;
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 10px;
+    border: 1px solid #181825;
+}
+
+#custom-start,
+#custom-skip,
+#custom-stop {
+  border-radius: 5px;
+}
+
+#custom-pomodoro {
+    border-radius: 5px;
+    margin-left: 0px;   
+}
+
+#custom-restart {
+  border-radius: 5px;
+  margin-right: 0px;
+}
