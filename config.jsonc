@@ -8,21 +8,21 @@
     },
 
     "custom/start" : {
-      "format" : "▶️",
+      "format" : "▶",
       "on-click" : "python3 ~/.config/waybar/scripts/start.py"
     },
 
     "custom/stop" : {
-      "format" : "⏹",
+      "format" : "",
       "on-click" : "python3 ~/.config/waybar/scripts/stop.py"
     },
 
     "custom/restart" : {
-      "format" : "🔁",
+      "format" : "󰜉",
       "on-click" : "python3 ~/.config/waybar/scripts/restart.py"
     },
 
     "custom/skip" : {
-      "format" : "⏩",
+      "format" : "󰜉",
       "on-click" : "python3 ~/.config/waybar/scripts/skip.py"
     },
